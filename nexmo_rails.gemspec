@@ -18,9 +18,8 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency('jwt', '~> 2')
   spec.add_dependency('nexmo', '~> 5.5')
-  spec.add_development_dependency('minitest', '~> 5.0')
-  spec.add_development_dependency('webmock', '~> 3.0')
-  spec.add_development_dependency("rails", "~> 5.2")
+  spec.add_development_dependency('rspec')
+  spec.add_development_dependency('generator_spec')
 
   spec.metadata = {
     'homepage' => 'https://github.com/Nexmo/nexmo-rails',
