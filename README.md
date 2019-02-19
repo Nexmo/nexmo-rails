@@ -67,6 +67,8 @@ Nexmo.sms.send(from: 'YOUR_NUMBER', to: 'NUMBER', text: 'Hello world')
 
 ```
 
+More information on the Nexmo Ruby client library and how to use it with the Nexmo APIs can be found [here](https://github.com/Nexmo/nexmo-ruby).
+
 ## License
 
 This project is under the [MIT License](LICENSE).
