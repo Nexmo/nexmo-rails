@@ -1,7 +1,7 @@
 # Nexmo Rails Gem
 
 This is the Nexmo Rails Gem for Nexmo's API. To use it you'll
-need a Nexmo account. Sign up [for free at nexmo.com][signup].
+need a Nexmo account. Sign up [for free at nexmo.com](https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=nexmo-rails).
 
 * [Requirements](#requirements)
 * [Installation](#installation)
