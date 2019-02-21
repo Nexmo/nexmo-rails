@@ -13,4 +13,8 @@ describe NexmoInitializerGenerator, type: :generator do
     it "creates a Nexmo initializer" do
       assert_file "config/initializers/nexmo.rb"
     end
+
+    it "adds a Nexmo instance to the initializer" do
+      assert_file "config/initializers/nexmo.rb", /::Nexmo = Nexmo::Client.new do |config|/
+    end
   end
