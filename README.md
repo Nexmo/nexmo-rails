@@ -14,17 +14,21 @@ Nexmo Rails requires:
 
 * Rails 5.2+
 * Ruby 2.5.3+
+* [dotenv](https://github.com/bkeepers/dotenv)
 * To use the Nexmo APIs, you [need an account](https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=nexmo-rails)
 
 ## Installation
 
-To install the Nexmo Rails gem, add it to your project's Gemfile:
+To install the Nexmo Rails gem, add it, along with `dotenv-rails`, to your project's Gemfile:
 
 ```ruby
 
 gem 'nexmo_rails'
+gem 'dotenv-rails'
 
 ```
+
+The `dotenv-rails` gem assists with environment variable management and utilization. 
 
 Then, run `bundle install` from the command line.
 
