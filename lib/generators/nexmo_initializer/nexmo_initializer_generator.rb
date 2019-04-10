@@ -6,6 +6,8 @@ class NexmoInitializerGenerator < Rails::Generators::Base
 
     def create_nexmo_initializer
       initializer "nexmo.rb" do <<~HEREDOC 
+        require 'nexmo'
+        
         ::Nexmo = Nexmo::Client.new do |config|
           config.api_key = ENV['NEXMO_API_KEY'],
           config.api_secret = ENV['NEXMO_API_SECRET'],
