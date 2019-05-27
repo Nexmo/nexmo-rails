@@ -9,9 +9,7 @@ module Nexmo
 
     def_delegators :@client, :sms, :tfa, :calls, :verify,
                    :number_insight, :applications, :numbers,
-                   :secrets, :redact, :signature, :conversations,
-                   :conversation_users, :conversation_members,
-                   :conversation_legs, :conversation_events
+                   :secrets, :redact, :signature, :conversations
 
     def setup
       self.client = ::Nexmo::Client.new do |config|
