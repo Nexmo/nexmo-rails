@@ -12,3 +12,7 @@
 # 0.1.0
 
 * First version!
+
+# 0.2.0
+
+* Introduced support for Credentials in addition to environment variables
