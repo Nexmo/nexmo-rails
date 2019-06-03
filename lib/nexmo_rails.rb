@@ -7,10 +7,11 @@ module Nexmo
 
     attr_accessor :client
 
-    def_delegators :@client, :sms, :tfa, :calls, :verify,
-                   :number_insight, :applications, :numbers,
-                   :secrets, :redact, :signature, :conversations
-
+    def_delegators :@client, :account, :alerts, :applications, :calls,
+                   :conversations, :conversions, :files, :messages, 
+                   :numbers, :number_insight, :pricing, :redact, 
+                   :secrets, :sms, :signature, :tfa, :verify
+                   
     def setup
       self.client = ::Nexmo::Client.new do |config|
         yield config
