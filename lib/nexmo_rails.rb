@@ -7,10 +7,11 @@ module Nexmo
 
     attr_accessor :client
 
-    def_delegators :@client, :account, :alerts, :applications, :calls,
-                   :conversations, :conversions, :files, :messages, 
-                   :numbers, :number_insight, :pricing, :redact, 
-                   :secrets, :sms, :signature, :tfa, :verify
+    def_delegators :@client, :account, :alerts, :applications, 
+                   :applications_v2, :calls, :conversations,
+                   :conversions, :files, :messages, :numbers,
+                   :number_insight, :pricing, :redact, :secrets,
+                   :sms, :signature, :tfa, :verify
                    
     def setup(&block)
       config = OpenStruct.new 
