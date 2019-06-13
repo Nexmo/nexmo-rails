@@ -1,3 +1,7 @@
+# 0.3.1
+
+* Fixed initialization of `private key` to read the file in the path defined in the config
+
 # 0.3.0
 
 * Fixed compatibility issue with Nexmo Ruby Client library and now passing in a hash to initialize a new instance
