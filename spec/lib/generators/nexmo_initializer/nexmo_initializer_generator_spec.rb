@@ -1,5 +1,6 @@
 require 'spec_helper'
 require 'generator_spec'
+require 'rails_helper'
 require './lib/generators/nexmo_initializer/nexmo_initializer_generator.rb'
 
 describe NexmoInitializerGenerator, type: :generator do

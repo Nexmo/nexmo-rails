@@ -16,27 +16,27 @@ Nexmo Rails requires:
 
 * Rails 5.2+
 * Ruby 2.5.3+
-* [dotenv](https://github.com/bkeepers/dotenv)
 * To use the Nexmo APIs, you [need an account](https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=nexmo-rails)
 
 ## Installation
 
-To install the Nexmo Rails gem, add it, along with `dotenv-rails`, to your project's Gemfile:
+To install the Nexmo Rails gem add it to your project's Gemfile:
 
 ```ruby
 
 gem 'nexmo_rails'
-gem 'dotenv-rails'
 
 ```
-
-The `dotenv-rails` gem assists with environment variable management and utilization. 
 
 Then, run `bundle install` from the command line.
 
 ## Usage
 
-The Nexmo Rails gem will initialize a new instance of the Nexmo client inside your Rails application and make it globally accessible. To make this happen, first add the desired Nexmo credentials to your `.env` file. For example, if you are using only the `API_KEY` and `API_SECRET`, then add the following:
+The Nexmo Rails gem will initialize a new instance of the Nexmo client inside your Rails application and make it globally accessible. To make this happen, you must supply it with your Nexmo API credentials. You can do so either as environemnt variables or as part of your Rails credentials.
+
+### With Environment Variables 
+
+To add your Nexmo API credentials as environment variables, first add the desired Nexmo credentials to your `.env` file. For example, if you are using only the `API_KEY` and `API_SECRET`, then add the following:
 
 ```
 
@@ -55,11 +55,37 @@ NEXMO_APPLICATION_ID = your_application_id
 
 ```
 
+Make sure you have the `dotenv-rails` Gem installed in your application and that your `.env` file is included in `.gitignore` so as not to commit your credentials to version control. 
+
+### With Rails Credentials
+
+To add your Nexmo API credentials to your Rails Credentials, go ahead and open your encrypted credentials file with the following command:
+
+```console
+
+$ EDITOR="code --wait" rails credentials:edit
+
+```
+
+You can replace the `EDITOR` variable with your preferred editor. Once the credentials file is open, you are able to add the Nexmo credentials with the following namespacing:
+
+```yaml
+
+nexmo:
+    api_key:
+    api_secret:
+
+```
+
+You may add any of the Nexmo API credentials your application needs nested within the `nexmo:` namespace.
+
+### Running the Initializer
+
 To initialize your global Nexmo client in your application, run the following from your terminal:
 
 ```console
 
-rails generate nexmo_initializer
+$ rails generate nexmo_initializer
 
 ```
 

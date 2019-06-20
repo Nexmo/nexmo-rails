@@ -1,3 +1,7 @@
+# 0.4.1
+
+* Added support for Rails Credentials, in addition to environment variables! 🙌
+
 # 0.3.1
 
 * Fixed initialization of `private key` to read the file in the path defined in the config
