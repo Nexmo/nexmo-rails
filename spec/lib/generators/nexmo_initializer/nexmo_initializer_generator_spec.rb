@@ -12,7 +12,7 @@ describe NexmoInitializerGenerator, type: :generator do
   end
 
   describe 'nexmo_initializer_generator' do 
-    it "creates a Nexmo initializer" do
+    it 'creates a Nexmo initializer' do
       assert_file "config/initializers/nexmo.rb"
     end
   end
