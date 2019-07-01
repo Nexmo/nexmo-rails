@@ -1,6 +1,6 @@
 # Nexmo Rails Gem
 
-[![Gem Version](https://badge.fury.io/rb/nexmo_rails.svg)](https://badge.fury.io/rb/nexmo_rails) [![Coverage Status](https://coveralls.io/repos/github/Nexmo/nexmo-rails/badge.svg?branch=master)](https://coveralls.io/github/Nexmo/nexmo-rails?branch=master) [![Build Status](https://api.travis-ci.org/Nexmo/nexmo-ruby.svg?branch=master)](https://travis-ci.org/Nexmo/nexmo-ruby)
+[![Gem Version](https://badge.fury.io/rb/nexmo_rails.svg)](https://badge.fury.io/rb/nexmo_rails) [![Coverage Status](https://coveralls.io/repos/github/Nexmo/nexmo-rails/badge.svg?branch=master)](https://coveralls.io/github/Nexmo/nexmo-rails?branch=master) [![Build Status](https://api.travis-ci.org/Nexmo/nexmo-rails.svg?branch=master)](https://travis-ci.org/Nexmo/nexmo-ruby)
 
 This is the Nexmo Rails Gem for Nexmo's API. To use it you'll
 need a Nexmo account. Sign up [for free at nexmo.com](https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=nexmo-rails).
