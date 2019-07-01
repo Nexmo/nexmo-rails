@@ -20,8 +20,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency('nexmo', '~> 5.5')
   spec.add_dependency('dotenv-rails')
   spec.add_development_dependency('rspec')
+  spec.add_development_dependency('rails')
   spec.add_development_dependency('generator_spec')
-  spec.add_development_dependency('rails-dummy')
+  spec.add_development_dependency('simplecov', '~> 0.16')
 
   spec.metadata = {
     'homepage' => 'https://github.com/Nexmo/nexmo-rails',

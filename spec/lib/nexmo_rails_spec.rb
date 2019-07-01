@@ -1,5 +1,5 @@
-require_relative '../../lib/nexmo_rails'
 require 'spec_helper'
+require_relative '../../lib/nexmo_rails'
 
 describe Nexmo do
   describe '.setup' do
@@ -23,6 +23,7 @@ describe Nexmo do
       expect(client.signature_secret).to eq('NEXMO_API_SIGNATURE')
       expect(client.application_id).to eq('NEXMO_APPLICATION_ID')
       expect(client.private_key).to eq('NEXMO_PRIVATE_KEY')
-     end
+    end
   end
 end
+

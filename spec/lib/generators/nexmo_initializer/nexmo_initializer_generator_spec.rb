@@ -11,7 +11,9 @@ describe NexmoInitializerGenerator, type: :generator do
     run_generator
   end
 
-  it "creates a Nexmo initializer" do
-    assert_file "config/initializers/nexmo.rb"
+  describe 'nexmo_initializer_generator' do 
+    it 'creates a Nexmo initializer' do
+      assert_file "config/initializers/nexmo.rb"
+    end
   end
 end
