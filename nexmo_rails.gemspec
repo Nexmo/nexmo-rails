@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency('rails')
   spec.add_development_dependency('generator_spec')
   spec.add_development_dependency('simplecov', '~> 0.16')
+  spec.add_development_dependency('coveralls', '~> 0.8.15')
 
   spec.metadata = {
     'homepage' => 'https://github.com/Nexmo/nexmo-rails',
