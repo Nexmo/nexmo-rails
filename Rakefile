@@ -16,14 +16,11 @@ end
 
 require 'bundler/gem_tasks'
 
-require 'rake/testtask'
+require 'rspec/core/rake_task'
 require 'coveralls/rake/task'
 
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'test'
-  t.pattern = 'test/**/*_test.rb'
-  t.verbose = false
-end
+RSpec::Core::RakeTask.new(:test)
+
 Coveralls::RakeTask.new
 
 task default: :test
