@@ -1,3 +1,7 @@
+# 0.4.2
+
+* Fixed bug when initializing with Credentials and no private key provided
+
 # 0.4.1
 
 * Added support for Rails Credentials, in addition to environment variables! 🙌
