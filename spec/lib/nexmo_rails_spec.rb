@@ -38,13 +38,11 @@ describe Nexmo do
         config.application_id    = 'NEXMO_APPLICATION_ID'
         config.private_key       = './private.key'
       end
-      allow(described_class.client.private_key).to receive(:present?).and_return(true)
     end
 
     it 'uses file path for private key when it is present' do
       client = described_class.client
 
-      expect(client.private_key).not_to be_nil
       expect(client.private_key).to eq('./private.key')
     end
   end
@@ -52,7 +50,6 @@ describe Nexmo do
   describe 'private key initialization with no key defined' do
 
     before do 
-      allow(File).to receive(:exists?).and_return(false)
       described_class.setup do |config|
         config.api_key           = 'NEXMO_API_KEY'
         config.api_secret        = 'NEXMO_API_SECRET'
@@ -60,7 +57,6 @@ describe Nexmo do
         config.application_id    = 'NEXMO_APPLICATION_ID'
         config.private_key       = ''
       end
-      allow(described_class.client.private_key).to receive(:present?).and_return(false)
     end
 
     it 'does not define a private key if one is not given' do
