@@ -1,3 +1,7 @@
+# 0.5.0
+
+* Upgraded `nexmo-ruby` dependency to `6.0.0`. There are backwards incompatible changes in the latest version of `nexmo-ruby`, please see the [changelog](https://github.com/Nexmo/nexmo-ruby/blob/master/CHANGES.md) for details.
+
 # 0.4.2
 
 * Fixed bug when initializing with Credentials and no private key provided

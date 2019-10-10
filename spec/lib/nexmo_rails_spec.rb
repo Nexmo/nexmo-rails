@@ -15,15 +15,15 @@ describe Nexmo do
       end
     end
 
-    it 'sets up the client' do
+    it 'sets up the config' do
       client = described_class.client
 
       expect(client).to be_an_instance_of(::Nexmo::Client)
-      expect(client.api_key).to eq('NEXMO_API_KEY')
-      expect(client.api_secret).to eq('NEXMO_API_SECRET')
-      expect(client.signature_secret).to eq('NEXMO_API_SIGNATURE')
-      expect(client.application_id).to eq('NEXMO_APPLICATION_ID')
-      expect(client.private_key).to eq('NEXMO_PRIVATE_KEY')
+      expect(client.config.api_key).to eq('NEXMO_API_KEY')
+      expect(client.config.api_secret).to eq('NEXMO_API_SECRET')
+      expect(client.config.signature_secret).to eq('NEXMO_API_SIGNATURE')
+      expect(client.config.application_id).to eq('NEXMO_APPLICATION_ID')
+      expect(client.config.private_key).to eq('NEXMO_PRIVATE_KEY')
     end
   end
 
@@ -43,7 +43,7 @@ describe Nexmo do
     it 'uses file path for private key when it is present' do
       client = described_class.client
 
-      expect(client.private_key).to eq('./private.key')
+      expect(client.config.private_key).to eq('./private.key')
     end
   end
 
@@ -62,7 +62,7 @@ describe Nexmo do
     it 'does not define a private key if one is not given' do
       client = described_class.client
 
-      expect(client.private_key).to be_blank
+      expect(client.config.private_key).to be_blank
     end
   end
 end
