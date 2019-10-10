@@ -2,11 +2,8 @@ dist: xenial
 language: ruby
 cache: bundler
 rvm:
-  - 2.3
-  - 2.4
   - 2.5
   - 2.6
-  - jruby-9.1
   - jruby-9.2
 before_install:
   - gem install rubygems-update -N -v '<3' && update_rubygems
