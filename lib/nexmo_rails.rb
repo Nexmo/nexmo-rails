@@ -8,7 +8,7 @@ module Nexmo
     attr_accessor :client
 
     def_delegators :@client, :account, :alerts, :applications, 
-                   :calls, :conversations, :conversions, 
+                   :voice, :conversations, :conversions,
                    :files, :messages, :numbers,
                    :number_insight, :pricing, :redact, :secrets,
                    :sms, :signature, :tfa, :verify
