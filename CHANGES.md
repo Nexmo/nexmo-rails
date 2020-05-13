@@ -1,3 +1,7 @@
+# 1.0.0
+
+* Renamed `calls` to `voice` in the delegators within the `Nexmo` module, in accordance with the v7.0.0 release of the Nexmo Ruby SDK, please see the [SDK changelog](https://github.com/Nexmo/nexmo-ruby/blob/master/CHANGES.md) for details.
+
 # 0.5.0
 
 * Upgraded `nexmo-ruby` dependency to `6.0.0`. There are backwards incompatible changes in the latest version of `nexmo-ruby`, please see the [changelog](https://github.com/Nexmo/nexmo-ruby/blob/master/CHANGES.md) for details.
