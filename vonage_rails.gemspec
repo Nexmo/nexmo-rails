@@ -1,23 +1,23 @@
 $:.push File.expand_path("lib", __dir__)
 
 # Maintain your gem's version:
-require "nexmo_rails/version"
+require "vonage_rails/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "nexmo_rails"
-  spec.version     = NexmoRails::VERSION
-  spec.authors     = ["Nexmo"]
-  spec.email       = ["devrel@nexmo.com"]
+  spec.name        = "vonage_rails"
+  spec.version     = VonageRails::VERSION
+  spec.authors     = ["Vonage"]
+  spec.email       = ["devrel@vonage.com"]
   spec.homepage    = "https://github.com/Nexmo/nexmo-rails"
-  spec.summary     = "This is a Rails initializer for Nexmo\'s Ruby Gem. To use it you\'ll need a Nexmo account. Sign up for free at https://www.nexmo.com"
-  spec.description = "Rails Initializer for Nexmo\'s Ruby Client"
+  spec.summary     = "This is a Rails initializer for Vonage\'s Ruby Gem. To use it you\'ll need a Vonage account. Sign up for free at https://www.vonage.com"
+  spec.description = "Rails Initializer for Vonage\'s Ruby Server SDK"
   spec.license     = "MIT"
 
   spec.files = Dir["{lib}/**/*", "LICENSE", "Rakefile", "README.md"]
 
   spec.add_dependency('jwt', '~> 2')
-  spec.add_dependency('nexmo', '~> 6.0')
+  spec.add_dependency('vonage', '~> 7.2.0')
   spec.add_dependency('dotenv-rails')
   spec.add_development_dependency('rspec')
   spec.add_development_dependency('rails')
