@@ -16,7 +16,7 @@ require 'sprockets/railtie'
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
-require 'nexmo_rails'
+require 'vonage_rails'
 
 module Dummy
   class Application < Rails::Application

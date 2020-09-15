@@ -1,7 +1,7 @@
-require 'nexmo'
+require 'vonage'
 require 'forwardable'
 
-module Nexmo
+module Vonage
   class << self
     extend Forwardable
 
@@ -16,8 +16,7 @@ module Nexmo
     def setup(&block)
       config = OpenStruct.new 
       config.instance_eval(&block)
-
-      self.client = ::Nexmo::Client.new(
+      self.client = ::Vonage::Client.new(
         api_key: config.api_key,
         api_secret: config.api_secret,
         signature_secret: config.signature_secret,
