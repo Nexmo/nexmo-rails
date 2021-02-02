@@ -1,6 +1,6 @@
 # Vonage Rails Gem
 
-[![Gem Version](https://badge.fury.io/rb/vonage_rails.svg)](https://badge.fury.io/rb/vonage_rails) [![Coverage Status](https://coveralls.io/repos/github/Nexmo/nexmo-rails/badge.svg?branch=master)](https://coveralls.io/github/Nexmo/nexmo-rails?branch=master) [![Build Status](https://api.travis-ci.org/Nexmo/nexmo-rails.svg?branch=master)](https://travis-ci.org/Nexmo/nexmo-rails)
+[![Gem Version](https://badge.fury.io/rb/vonage_rails.svg)](https://badge.fury.io/rb/vonage_rails) [![Coverage Status](https://coveralls.io/repos/github/Nexmo/nexmo-rails/badge.svg?branch=master)](https://coveralls.io/github/Nexmo/nexmo-rails?branch=master) [![Build Status](https://api.travis-ci.org/Nexmo/nexmo-rails.svg?branch=main)](https://travis-ci.org/Nexmo/nexmo-rails)
 
 <img src="https://developer.nexmo.com/assets/images/Vonage_Nexmo.svg" height="48px" alt="Nexmo is now known as Vonage" />
 
