@@ -1,3 +1,6 @@
+> THIS PACKAGE IS DEPRECATED 
+> We have moved to: https://github.com/Vonage/vonage-rails, so please raise any new issues or Pull Requests in that repository.
+
 # Vonage Rails Gem
 
 [![Gem Version](https://badge.fury.io/rb/vonage_rails.svg)](https://badge.fury.io/rb/vonage_rails) [![Coverage Status](https://coveralls.io/repos/github/Nexmo/nexmo-rails/badge.svg?branch=master)](https://coveralls.io/github/Nexmo/nexmo-rails?branch=master) [![Build Status](https://api.travis-ci.org/Nexmo/nexmo-rails.svg?branch=main)](https://travis-ci.org/Nexmo/nexmo-rails)
